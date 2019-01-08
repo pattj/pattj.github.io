@@ -12,18 +12,15 @@
 
 article {
 	display: grid;
-        grid-template-columns: 1fr 0.5in [start] minmax(0, 7.5in) [end] 0.5in 1fr;
+	grid-template-columns: 1fr 0.5in [start] 1.25in 5in 1.25in [end] 0.5in 1fr;
 
-	
-	height: 100vh; /* temp fix */
-	
 	padding: 0.5in 0;
 }
 
 article * { grid-column: start / end; }
 
 @media (max-width: 8.5in) {
-	article { grid-template-columns: 1fr 5% [start] minmax(0, 7.5in) [end] 0.5in 1fr; }
+	article { grid-template-columns: 1fr 5% [start] 15% 60% 15% [end] 5% 1fr; }
 }
 			
         </style>
@@ -38,12 +35,7 @@ article * { grid-column: start / end; }
 	    
 		<!-- article -->
 		<article>
-			<p class="debug-center">ARTICLE</p>
-		</article>
-
-		<!-- article -->
-		<article>
-			<p class="debug-center">ARTICLE</p>
-		</article>
+		     <img src="https://mikeorzen.com/wp-content/uploads/2015/10/cosmos.jpg">
+                </article>
     </body>
 </html>
