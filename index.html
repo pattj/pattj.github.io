@@ -22,6 +22,10 @@ article {
 
 article * { grid-column: start / end; }
 
+@media (max-width: 8.5in) {
+	article { grid-template-columns: 1fr 5% [start] minmax(0, 7.5in) [end] 0.5in 1fr; }
+}
+			
         </style>
 	</head>
     <body>
