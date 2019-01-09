@@ -10,7 +10,7 @@
 		<link rel="stylesheet" href="styles/article.css">
 		<link rel="stylesheet" href="styles/article-image.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+		<link rel="stylesheet" href="styles/topnav.css">
 		<style>
 		h2, p:not(:last-child) { margin-bottom: 2.4rem; }
 
@@ -61,5 +61,18 @@ p    { font: 1.0rem "Roboto"; }
 				<strong>Accept these terms, and the cosmos is yours.</strong>
 			</p>
 		</article>
+		
+		<script>
+			function myFunction() {
+			  var x = document.getElementById("myTopnav");
+			  if (x.className === "topnav") {
+				x.className += " responsive";
+			  } else {
+				x.className = "topnav";
+			  }
+}
+		</script>
+		
+		
     </body>
 </html>
