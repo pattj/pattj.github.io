@@ -55,9 +55,17 @@ p    { font: 1.0rem "Roboto"; }
 		             which is then populated by the name of the monsters the I got from the Open5e API. Then whatever name the user choosed from the list is then
 		             bind to the "selectedMonster" from my "monster-info" component so that the component can create a card filled with the selected monster's info
 		             onto the screen.
-				  <img src="monstercomponent.PNG">  
+				  <img src="monstercomponent.PNG" height ="10%" width = "10%">  
 		          </p>  
-
+                            
+	                  <p>
+				The most annoying part was dealing with the paged API. You see, the list of monsters on the Open5e API
+				are split up into 7 pages. This means that I would have to call it 7 times (because there are 7 pages) and 
+				concatenate the result into one array. This sounds pretty simple but don't forget that these calls are asynchronous, so it's not 
+				like I can just throw it in a loop because of how Observables work (as the responds won't come back at the same time). This post is already pretty long so I'll go into more detail
+				 in my next post.
+	                  </p> 
+	    
 			<time datetime="01-27-2019">Jan. 27, 2019</time>
 	    	</article>
 	    
