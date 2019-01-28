@@ -31,8 +31,39 @@ p    { font: 1.0rem "Roboto"; }
     <i class="fa fa-bars"></i>
   </a>
 </div>
+	    	    	  <article id="third-blog">
+	    		<h1><em>Progress on D&D App</em> </a></h1>
+			<h2>Post #3</h2>
+			<p>
+				It's up now on Github <a href="https://github.com/pattj/dndapp">click here!</a> Woooooo.
+				
+			</p>
+			<p>
+	                       So far so good, I made modules for characters and monsters and I think I'm making decent progress so far since I
+	    			started 10 days ago. Balancing this and studying Leetcode problems and work was not fun.
+	    	         </p>
+			 	
+		          <p>
+	    			For characters, I hardcoded some character objects and made a table of characters on the html template (for the character component)
+				The table is supposed to represent a list of characters  that a specific user has created. I also added a filter bar as well so that a user
+                               can look up a specific character faster by typing in a specific attribute. The characters are hard coded right now, so eventually I would like
+                               for everything (users and their list of characters ) to be stored in a database that is accessed by Web API (that I'll
+                               have to code up later once I'm satisied with my progress on the monster component) </p>
+                          <p>
+			     The monsters component was where most of my time went into. I'm currently leveraging this D&D API called Open5e.
+			     I like it alot, whoever made it has done a really good job. So far, I slaped on a dropdown selection list onto the component,
+		             which is then populated by the name of the monsters the I got from the Open5e API. Then whatever name the user choosed from the list is then
+		             bind to the "selectedMonster" from my "monster-info" component so that the component can create a card filled with the selected monster's info
+		             onto the screen.
+				  <img src="monstercomponent.PNG">  
+		          </p>  
+
+			<time datetime="01-27-2019">Jan. 27, 2019</time>
+	    	</article>
+	    
+	    
 	    	  <article id="second-blog">
-	    		<h1><em>What I'm currently working on and ideas for scaling blog posts</em> </a></h1>
+	    		<h1><em>What I'm currently working on and ideas for scaling blog posts</em>  </h1>
 			<h2>Post #2</h2>
 			<p>
 				Currently I'm interested in learning more about Angular because I like how it sort of compartmentalize 
